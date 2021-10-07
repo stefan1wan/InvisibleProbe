@@ -8,12 +8,11 @@ data = read_records_nvme(filename)
 
 x1, y1 =[], []
 
-for i in range(0, len(data)):
+for i in range(0, len(data)-1):
     x1.append(i)
-    y1.append(data[i])
+    y1.append(data[i+1] - data[i])
 
 fig = plt.figure(1)
 ax = fig.add_subplot(111)
 ax.plot(x1,y1, linewidth=0.25)
 plt.show()
-
