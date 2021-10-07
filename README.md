@@ -34,5 +34,5 @@ SPDK doesn't support devices like ESSD on Alibaba Cloud. So we use io_uring inst
 ## Collect probe traces
 Use Google Chrome headless mode to access the web pages and collect the probe trace at the same time, and here is an easy demo.
 
-## Show the trace
+## Show the traces
 Interpret the logs and show the with matplotlib. The two easy scripts could show the data collected by rdma_probe and NVMe probe(io_uring probe is the same with nvme probe).
